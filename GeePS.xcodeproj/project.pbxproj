@@ -15,6 +15,8 @@
 		2BA1960F1E56A4D800FE376A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BA1960D1E56A4D800FE376A /* LaunchScreen.storyboard */; };
 		2BA1961A1E56A4D800FE376A /* GeePSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA196191E56A4D800FE376A /* GeePSTests.m */; };
 		2BA196251E56A4D800FE376A /* GeePSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA196241E56A4D800FE376A /* GeePSUITests.m */; };
+		2BC656F41E57029A0068908F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC656F21E56BA370068908F /* CoreLocation.framework */; };
+		2BC656F91E570A350068908F /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC656F81E570A350068908F /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		2BA196201E56A4D800FE376A /* GeePSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeePSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BA196241E56A4D800FE376A /* GeePSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeePSUITests.m; sourceTree = "<group>"; };
 		2BA196261E56A4D800FE376A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BC656F21E56BA370068908F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2BC656F71E570A350068908F /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = "../../../../Downloads/MBProgressHUD-master/MBProgressHUD.h"; sourceTree = "<group>"; };
+		2BC656F81E570A350068908F /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = "../../../../Downloads/MBProgressHUD-master/MBProgressHUD.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BC656F41E57029A0068908F /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +91,7 @@
 				2BA196181E56A4D800FE376A /* GeePSTests */,
 				2BA196231E56A4D800FE376A /* GeePSUITests */,
 				2BA195FD1E56A4D700FE376A /* Products */,
+				2BC656F11E56BA370068908F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,8 +110,10 @@
 			children = (
 				2BA196021E56A4D700FE376A /* AppDelegate.h */,
 				2BA196031E56A4D800FE376A /* AppDelegate.m */,
-				2BA196051E56A4D800FE376A /* ViewController.h */,
 				2BA196061E56A4D800FE376A /* ViewController.m */,
+				2BA196051E56A4D800FE376A /* ViewController.h */,
+				2BC656F71E570A350068908F /* MBProgressHUD.h */,
+				2BC656F81E570A350068908F /* MBProgressHUD.m */,
 				2BA196081E56A4D800FE376A /* Main.storyboard */,
 				2BA1960B1E56A4D800FE376A /* Assets.xcassets */,
 				2BA1960D1E56A4D800FE376A /* LaunchScreen.storyboard */,
@@ -138,6 +147,14 @@
 				2BA196261E56A4D800FE376A /* Info.plist */,
 			);
 			path = GeePSUITests;
+			sourceTree = "<group>";
+		};
+		2BC656F11E56BA370068908F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BC656F21E56BA370068908F /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +224,7 @@
 				TargetAttributes = {
 					2BA195FB1E56A4D600FE376A = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ZMM4MMX3FJ;
 						ProvisioningStyle = Automatic;
 					};
 					2BA196141E56A4D800FE376A = {
@@ -276,6 +294,7 @@
 				2BA196071E56A4D800FE376A /* ViewController.m in Sources */,
 				2BA196041E56A4D800FE376A /* AppDelegate.m in Sources */,
 				2BA196011E56A4D700FE376A /* main.m in Sources */,
+				2BC656F91E570A350068908F /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -411,7 +430,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -422,10 +441,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = ZMM4MMX3FJ;
 				INFOPLIST_FILE = GeePS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = vnpttech.GeePS;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.vnpttech.GeePS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -434,10 +455,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = ZMM4MMX3FJ;
 				INFOPLIST_FILE = GeePS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = vnpttech.GeePS;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.vnpttech.GeePS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -507,6 +530,7 @@
 				2BA1962B1E56A4D800FE376A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2BA1962C1E56A4D800FE376A /* Build configuration list for PBXNativeTarget "GeePSTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +539,7 @@
 				2BA1962E1E56A4D800FE376A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2BA1962F1E56A4D800FE376A /* Build configuration list for PBXNativeTarget "GeePSUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +548,7 @@
 				2BA196311E56A4D800FE376A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

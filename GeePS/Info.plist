@@ -26,8 +26,13 @@
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
-		<string>armv7</string>
+		<string>location-services</string>
+		<string>gps</string>
 	</array>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>FakeApp tracks your position when in use to search nearby restaurants.</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>FakeApp tracks your position always to search nearby restaurants.</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
